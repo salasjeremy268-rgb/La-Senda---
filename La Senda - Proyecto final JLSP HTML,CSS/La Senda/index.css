@@ -1,0 +1,103 @@
+
+/* ====== HERO ====== */
+
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.hero p {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    line-height: 1.8;
+    font-size: 17px;
+    color: #333;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ====== CARDS ====== */
+.destacados {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.destacados h2 {
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.historia h1:not(:first-child) {
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+}
+/* ====== SLIDER ====== */
+.slider {
+    width: 20%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    margin:auto;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+    flex-shrink: 0;
+  border-radius: 10px;
+}
+.slides {
+  display: flex;
+
+  animation: deslizar 5s infinite linear;
+}
+
+@media (max-width: 600px) {
+
+    .slider {
+        height: auto;
+    }
+
+    .slides {
+        width: 500%;
+    }
+
+}
+@keyframes deslizar {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-400%);
+  }
+  
+}
+
+
