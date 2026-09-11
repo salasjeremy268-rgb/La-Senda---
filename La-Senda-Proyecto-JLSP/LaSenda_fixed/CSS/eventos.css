@@ -1,0 +1,99 @@
+
+/* ====== HERO ====== */
+
+.hero {
+    padding: 20px;
+    text-align: center;
+}
+
+/* ====== EVENTOS ====== */
+
+.eventos-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.evento {
+    display: flex;
+    gap: 30px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.evento:hover {
+    transform: scale(1.02);
+}
+
+.evento img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.evento-texto {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.evento-texto h2 {
+    margin-bottom: 15px;
+    color: #c0392b;
+}
+
+.fecha {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+.evento:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 600px) {
+
+    .evento {
+        flex-direction: column !important;
+        text-align: center;
+    }
+}
+/* ================= ANIMACION ========================= */
+@keyframes aparecerIzquierda {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animación entrada desde la derecha */
+@keyframes aparecerDerecha {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Aplicación alternada */
+.evento:nth-child(odd) {
+    animation: aparecerIzquierda 1.8s ease-out;
+}
+
+.evento:nth-child(even) {
+    animation: aparecerDerecha 1.8s ease-out;
+}

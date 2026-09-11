@@ -1,0 +1,55 @@
+
+
+/* ====== HERO ====== */
+
+.hero {
+    padding: 20px;
+    text-align: center;
+}
+
+/* ====== FORMULARIO ====== */
+
+.formulario {
+    max-width: 500px;
+    width: 90%;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, textarea {
+    margin-bottom: 15px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #e74c3c;
+}

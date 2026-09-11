@@ -1,0 +1,47 @@
+
+/* ====== HERO ====== */
+
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.hero p {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    line-height: 1.8;
+    font-size: 17px;
+    color: #333;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.politica-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.politica-container h2 {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #111;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.politica-container p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    font-size: 17px;
+    color: #333;
+}

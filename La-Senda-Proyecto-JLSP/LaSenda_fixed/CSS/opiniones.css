@@ -1,0 +1,45 @@
+
+/* ====== HERO ====== */
+
+.hero {
+    padding: 20px;
+    text-align: center;
+}
+/* ====== OPINIONES ====== */
+
+.opiniones {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.opiniones h1 {
+    margin-bottom: 40px;
+}
+
+.opiniones-container {
+    display: flex;
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;      /* 🔥 CLAVE */
+    justify-content: center;
+}
+
+.opinion-card {
+    flex: 1;
+    background: rgba(255,255,255,0.9);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.opinion-card:hover {
+    transform: translateY(-5px);
+}
+
+.estrellas {
+    color: gold;
+    margin: 10px 0;
+    font-size: 20px;
+}

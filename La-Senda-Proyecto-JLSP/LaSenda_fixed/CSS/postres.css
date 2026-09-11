@@ -1,0 +1,49 @@
+
+/* ====== HERO ====== */
+
+.hero {
+    padding: 20px;
+    text-align: center;
+}
+
+/* ====== CARDS ====== */
+
+.cards {
+    display: flex;
+    gap: 25px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    flex: 1;
+    border: 1px solid #ccc;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card .img {
+    height: 130px;
+    background: #e6e6e6;
+    margin-bottom: 20px;
+}
+
+.card button {
+    background-color: rgb(255, 94, 0);
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
